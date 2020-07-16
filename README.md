@@ -22,7 +22,7 @@ See the section about
 [deployment](https://facebook.github.io/create-react-app/docs/deployment) for
 more information.
 
-### `yarn server'
+### `yarn server`
 
 This command will create the dev server so you can create an account or login
 into an existing one
