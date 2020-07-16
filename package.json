@@ -1,0 +1,96 @@
+{
+  "name": "dragon-dex",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@material-ui/core": "^4.11.0",
+    "@material-ui/icons": "^4.9.1",
+    "@testing-library/dom": "^6.10.1",
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.3.2",
+    "@testing-library/react-hooks": "^3.2.1",
+    "@testing-library/user-event": "^7.1.2",
+    "axios": "^0.19.2",
+    "clsx": "^1.1.1",
+    "history": "^5.0.0",
+    "immer": "^7.0.5",
+    "jest": "^24.9.0",
+    "jest-axe": "^3.2.0",
+    "kcd-scripts": "^1.11.0",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-redux": "^7.2.0",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "3.4.1",
+    "react-spinners": "^0.9.0",
+    "react-toastify": "^6.0.8",
+    "reactotron-react-js": "^3.3.7",
+    "reactotron-redux": "^3.1.3",
+    "reactotron-redux-saga": "^4.2.3",
+    "redux": "^4.0.5",
+    "redux-persist": "^6.0.0",
+    "redux-saga": "^1.1.3",
+    "test-data-bot": "^0.8.0"
+  },
+  "scripts": {
+    "dev": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "kcd-scripts test",
+    "server": "json-server-auth  --port 3001 ./src/database/db.json"
+  },
+  "babel": {
+    "presets": [
+      "kcd-scripts/babel"
+    ],
+    "plugins": [
+      "emotion"
+    ]
+  },
+  "eslintConfig": {
+    "extends": "./node_modules/kcd-scripts/eslint.js",
+    "rules": {
+      "import/prefer-default-export": "off",
+      "jsx-a11y/label-has-for": "off",
+      "react/prop-types": "off",
+      "import/no-unassigned-import": "off",
+      "no-console": "off",
+      "jsx-a11y/accessible-emoji": "off",
+      "consistent-return": "off",
+      "jsx-a11y/autocomplete-valid": "off",
+      "react-hooks/exhaustive-deps": "off",
+      "no-negated-condition": "off"
+    },
+    "settings": {
+      "import/resolver": {
+        "node": {
+          "paths": [
+            "src"
+          ],
+          "extensions": [
+            ".js"
+          ]
+        }
+      }
+    }
+  },
+  "eslintIgnore": [
+    "node_modules",
+    "coverage"
+  ],
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "json-server": "^0.16.1",
+    "json-server-auth": "^2.0.2"
+  }
+}
